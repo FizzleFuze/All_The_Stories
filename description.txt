@@ -1,0 +1,163 @@
+2do:
+    implement:
+    test:
+
+Changes:
+    v1.1
+        - Options added to change the random chance for various categories of story-bits to start.
+        - Moved terraforming story-bits to their own category for u/GalacticAnimeGirl.
+
+Notes:
+    Chances by Category:
+    Building Construction (5%)
+    Rocket Launch From Earth (10%)
+    Rocket Launching/Landing (Mars) (20%)
+    Sanity Breakdown (10%)
+    Prefab Placed (5%)
+    Tech Researched (5%)
+    Disasters (25%)
+    Rivals (10%)
+    Terraform (5%)
+    Others (5%)
+
+    Options:
+    local Construction
+    local Prefab
+    local ExRocket
+    local FoundersLanded
+    local Rockets
+    local SanityBreakdown
+    local TechResearched
+    local Disasters
+    local Rivals
+    local Tick
+    local Terraform
+
+    StoryBit IDs:
+    BuildingConstructed
+    ExperimentalRocketLaunched
+    FounderRocketLanded
+    PlacePrefab
+    RocketLandingAttempt
+    RocketManualLaunch
+    RocketUnloaded
+    SanityBreakdown
+    TechResearched
+    Tick
+    Tick_BeforeFounders
+    Tick_FounderStageDone
+    ColdWaveEnd
+    ColdWaveStart
+    DustStormEnd
+    DustStormStart
+    MeteorStormEnd
+    MeteorStormStart
+    RivalMilestone
+    RivalStartsAnomaly
+
+Steam Description:
+[b][i]Play story bits more often![/i][/b]
+👍 Story bits are also known as "random events" or "mini mysteries"
+👍 Set the chance for story bits categories to trigger between 0-100%
+👍 Options available for numerous categories of story bits
+
+You can now set the chance for categories of story bits to be triggered. This allows you to play through the story bits you love more often, while playing through other ones less often, or not at all!
+
+[b]WARNING:[/b] Increasing the chances for a category to trigger is likely to cause some story bits never to trigger. It may even cause a situation where no story bits trigger.
+
+[b]IMPORTANT:[/b] Use my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2729764971]Bugswatter mod[/url] with this one to prevent this from happening. It is located
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2729764971]here[/url].
+
+
+(Mod Option) Default Chances by Category:
+👍 Building Construction (5%)
+👍 Rocket Launch From Earth (10%)
+👍 Rocket Launching/Landing (Mars) (20%)
+👍 Sanity Breakdown (10%)
+👍 Prefab Placed (5%)
+👍 Tech Researched (5%)
+👍 Disasters (25%)
+👍 Rivals (10%)
+👍 Terraforming (5%)
+👍 Others (5%)
+
+Please take a second to rate this mod and leave a comment. Your feedback helps me produce better quality mods!
+
+If you're having any difficulties with the mod, or if you have suggestions for other story bit ideas, or even other mods entirely, please contact me directly instead of reporting the mod.
+
+My Steam Guide on reading logs and asking for help:
+https://steamcommunity.com/sharedfiles/filedetails/?id=2492780667
+
+Places you can find me:
+
+[b][i]Places you can find me[/i][/b]
+👍 Discord: https://discord.gg/kTgYq9UjWx (#fizzle_fuze-mods)
+👍 Reddit: /u/Fizzle_Fuze (/r/SurvivingMars/)
+👍 Email: mods@fizzlefuze.com
+👍 Chilling in an RC Safari
+
+If you don't enjoy this mod, please let me know why in a constructive and positive manner.
+
+Thanks for your support and feedback.
+Have a good game!
+FF
+
+[i]License:[/i]
+Copyright (C) 2022 Fizzle Fuze Enterprises (mods@fizzlefuze.com)
+
+You should have received a copy of the GNU Affero General Public License along with this program.
+If not, see https://www.gnu.org/licenses/
+
+
+Paradox Description:
+All The Stories! - Play story bits more often
+✔ Story bits are also known as "random events" or "mini mysteries"
+✔ Set the chance for story bits categories to trigger between 0-100%
+✔ Options available for numerous categories of story bits
+
+You can now set the chance for categories of story bits to be triggered. This allows you to play through the story bits you love more often, while playing through other ones less often, or not at all!
+
+WARNING: Increasing the chances for a category to trigger is likely to cause some story bits never to trigger. It may even cause a situation where no story bits trigger.
+
+IMPORTANT: Use my Bugswatter mod (Bugswatter by Fizzle_Fuze) with this one to prevent this from happening. It is located here:
+https://mods.paradoxplaza.com/mods/36701/Any
+
+(Mod Option) Default Chances by Category:
+✔ Building Construction (5%)
+✔ Rocket Launch From Earth (10%)
+✔ Rocket Launching/Landing (Mars) (20%)
+✔ Sanity Breakdown (10%)
+✔ Prefab Placed (5%)
+✔ Tech Researched (5%)
+✔ Disasters (25%)
+✔ Rivals (10%)
+✔ Terraforming (5%)
+✔ Others (5%)
+
+Please take a second to rate this mod and leave a comment. Your feedback helps me produce better quality mods!
+
+If you're having any difficulties with the mod, or if you have suggestions for other story bit ideas, or even other mods entirely, please contact me directly instead of reporting the mod.
+
+My Steam Guide on reading logs and asking for help:
+https://steamcommunity.com/sharedfiles/filedetails/?id=2492780667
+
+Places you can find me:
+✔ Discord: https://discord.gg/kTgYq9UjWx (#fizzle_fuze-mods)
+✔ Reddit: /u/Fizzle_Fuze (/r/SurvivingMars/)
+✔ Email: mods@fizzlefuze.com
+✔ Chilling in an RC Safari
+
+If you don't enjoy this mod, please let me know why in a constructive and positive manner!
+
+Thanks for your support and feedback.
+Have a good game!
+FF
+
+--
+
+License:
+
+Copyright (C) 2022 Fizzle Fuze Enterprises (mods@fizzlefuze.com)
+
+You should have received a copy of the GNU Affero General Public License along with this program.
+If not, see https://www.gnu.org/licenses/
