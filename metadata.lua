@@ -2,7 +2,7 @@ return PlaceObj('ModDef', {
 	'title', "All The Stories!",
 	'description', "",
 	'image', "thumb.jpg",
-	'last_changes', "",
+	'last_changes', "https://github.com/FizzleFuze/All_The_Stories/blob/master/changelog.md",
 	'ignore_files', {
 		"*.git/*",
 		"*.svn/*",
