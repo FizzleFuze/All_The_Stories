@@ -1,4 +1,8 @@
-# Version 1.2
+# Version 1.3
+ - Updated to use library
+ - Updated metadata
+
+## Version 1.2
 - Options added to change the random chance for various categories of story-bits to start.
 - Moved terraforming story-bits to their own category for u/GalacticAnimeGirl.
 

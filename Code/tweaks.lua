@@ -29,9 +29,6 @@ local Categories = {
     RivalStartsAnomaly = "Rivals"
 }
 
-
-
-
 --update the code based on player options on init and after they're changed
 local function UpdateOptions()
     Log("Func UpdateOptions...")
@@ -102,7 +99,7 @@ local function UpdateOptions()
     end
 
     --debug log
-    if Debugging then
+    if FF.Lib.Debug then
         Log("Update complete, new StoryBit chances:")
         for Category, _ in pairs(Categories) do
             Log(Category, " = ", StoryBitCategories[Category].Chance)
@@ -114,29 +111,10 @@ local function UpdateOptions()
 end
 
 --event handling
-function OnMsg.NewHour()
-    if Debugging == true then
-        Log("New Hour!")
-        PrintLog()
-    end
-end
-
---event handling
-function OnMsg.NewDay()
-    --log errors every day when not debugging
-    PrintLog()
-end
-
---event handling
 function OnMsg.ApplyModOptions(id)
-    --update the code based on player options set for this mod
     if id == CurrentModId then
         UpdateOptions()
     end
 end
 
---event handling
-function OnMsg.ModsReloaded(...)
-    --update the code based on player options set for this mod
-    UpdateOptions()
-end
+OnMsg.ModsReloaded = UpdateOptions
