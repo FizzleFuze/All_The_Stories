@@ -1,0 +1,49 @@
+2do:
+
+Notes:
+    Chances by Category:
+    Building Construction (5%)
+    Rocket Launch From Earth (10%)
+    Rocket Launching/Landing (Mars) (20%)
+    Sanity Breakdown (10%)
+    Prefab Placed (5%)
+    Tech Researched (5%)
+    Disasters (25%)
+    Rivals (10%)
+    Terraform (5%)
+    Others (5%)
+
+    Options:
+    local Construction
+    local Prefab
+    local ExRocket
+    local FoundersLanded
+    local Rockets
+    local SanityBreakdown
+    local TechResearched
+    local Disasters
+    local Rivals
+    local Tick
+    local Terraform
+
+    StoryBit IDs:
+    BuildingConstructed
+    ExperimentalRocketLaunched
+    FounderRocketLanded
+    PlacePrefab
+    RocketLandingAttempt
+    RocketManualLaunch
+    RocketUnloaded
+    SanityBreakdown
+    TechResearched
+    Tick
+    Tick_BeforeFounders
+    Tick_FounderStageDone
+    ColdWaveEnd
+    ColdWaveStart
+    DustStormEnd
+    DustStormStart
+    MeteorStormEnd
+    MeteorStormStart
+    RivalMilestone
+    RivalStartsAnomaly

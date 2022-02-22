@@ -1,39 +1,8 @@
---copyright
---[[
-*******************************************************************************
-Fizzle_Fuze's Surviving Mars Mods
-Copyright (c) 2022 Fizzle Fuze Enterprises (mods@fizzlefuze.com)
+--see Info/LICENSE for licensing and copyright info
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Affero General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU Affero General Public License for more details.
-
-    You should have received a copy of the GNU Affero General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-  If your software can interact with users remotely through a computer
-network, you should also make sure that it provides a way for users to
-get its source.  For example, if your program is a web application, its
-interface could display a "Source" link that leads users to an archive
-of the code.  There are many ways you could offer source, and different
-solutions will be better for different programs; see section 13 for the
-specific requirements.
-
-  You should also get your employer (if you work as a programmer) or school,
-if any, to sign a "copyright disclaimer" for the program, if necessary.
-For more information on this, and how to apply and follow the GNU AGPL, see
-<https://www.gnu.org/licenses/>.
-*******************************************************************************
---]]
-
---mod name
-local ModName = "["..CurrentModDef.title.."]"
+local function Log(...)
+    FF.Funcs.LogMessage("tweaks", ...)
+end
 
 --variables
 local Categories = {
@@ -60,80 +29,8 @@ local Categories = {
     RivalStartsAnomaly = "Rivals"
 }
 
---logging
-local Debugging = false
-local Info = false
 
-local function PrintLog()
-    local MsgLog = SharedModEnv["Fizzle_FuzeLog"]
 
-    if #MsgLog > 0 then
-        --print logged messages to console and file
-        for _, Msg in ipairs(MsgLog) do
-            print(Msg)
-        end
-        FlushLogFile()
-
-        --reset
-        SharedModEnv["Fizzle_FuzeLog"] = {}
-        return
-    end
-end
-if not SharedModEnv["Fizzle_FuzeLog"] then
-    SharedModEnv["Fizzle_FuzeLog"] = { ModName.." INFO: First Fizzle_Fuze mod loading!" }
-end
-
-local function Fizzle_FuzeLogMessage(...)
-    --get the severity, if it is passed in, then format it nicely
-    local Sev, Arg = nil, {...}
-    local SevType = { "DEBUG", "WARNING", "ERROR", "CRITICAL", "INFO"}
-
-    --first arg = filename, 2nd = severity
-    for _, ST in ipairs(SevType) do
-        if Arg[2] == ST then
-            Sev = ST
-            Arg[2] = Arg[2]..": "
-            break
-        end
-    end
-
-    --severity defaults to "DEBUG :"
-    if not Sev then
-        Sev = "DEBUG: "
-        Arg[2] = "DEBUG: "..Arg[2]
-    end
-
-    --only log DEBUG and INFO messages during testing
-    if Sev == "DEBUG: " and not(Debugging) or (Sev == "INFO: " and not(Info))then
-        return
-    end
-
-    --log the message
-    local MsgLog = SharedModEnv["Fizzle_FuzeLog"]
-
-    --if nothing was passed in, big error
-    if #Arg == 0 then
-        print(ModName,"/?.lua CRITICAL: No error message!")
-        FlushLogFile()
-        MsgLog[#MsgLog+1] = ModName.."/?.lua CRITICAL: No error message!"
-        SharedModEnv["Fizzle_FuzeLog"] = MsgLog
-        return
-    end
-
-    --build the message
-    local Msg = ModName.."/"..Arg[1]..".lua "
-    for i = 2, #Arg do
-        Msg = Msg..tostring(Arg[i])
-    end
-
-    --set it
-    MsgLog[#MsgLog+1] = Msg
-    SharedModEnv["Fizzle_FuzeLog"] = MsgLog
-end
-
-local function Log(...)
-    Fizzle_FuzeLogMessage("tweaks", ...)
-end
 
 --update the code based on player options on init and after they're changed
 local function UpdateOptions()
