@@ -1,7 +1,7 @@
 --see Info/LICENSE for licensing and copyright info
 
 local function Log(...)
-    FF.Funcs.LogMessage("tweaks", ...)
+    FF.Funcs.LogMessage(CurrentModDef.title, "tweaks", ...)
 end
 
 --variables
